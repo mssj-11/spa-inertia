@@ -12,14 +12,16 @@ laravel new spa-inertia
 composer require laravel/breeze --dev
 ```
 ####    Install packages
+#####   VUE
 ```sh
 php artisan breeze:install vue
 ```
-
-
+#####   NPM
 ```sh
-
+npm install
 ```
+
+
 ```sh
 
 ```
