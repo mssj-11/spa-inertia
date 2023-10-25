@@ -20,6 +20,10 @@ php artisan breeze:install vue
 ```sh
 npm install
 ```
+#####   Bootstrap & Sweetalert2
+```sh
+npm i bootstrap @fortawesome/fontawesome-free sweetalert2
+```
 
 
 ```sh
