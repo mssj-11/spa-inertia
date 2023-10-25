@@ -11,6 +11,8 @@ laravel new spa-inertia
 ```sh
 composer require laravel/breeze --dev
 ```
+
+
 ####    Install packages
 #####   VUE
 ```sh
@@ -26,7 +28,13 @@ npm i bootstrap @fortawesome/fontawesome-free sweetalert2
 ```
 
 
+##  Model Class
 ```sh
-
+php artisan make:model Songs -mcr -a -mcrf
 ```
 
+
+##  RUN
+```sh
+npm run dev
+```
