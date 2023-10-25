@@ -5,9 +5,15 @@
 laravel new spa-inertia
 ```
 
-## Install Breeze
+## Installation
+
+### Breeze
 ```sh
 composer require laravel/breeze --dev
+```
+####    Install packages
+```sh
+php artisan breeze:install vue
 ```
 
 
