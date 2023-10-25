@@ -33,6 +33,10 @@ npm i bootstrap @fortawesome/fontawesome-free sweetalert2
 php artisan make:model Songs -mcr -a -mcrf
 ```
 
+##  Migrations
+```sh
+php artisan migrate --seed
+```
 
 ##  RUN
 ```sh
