@@ -38,7 +38,13 @@ php artisan make:model Songs -mcr -a -mcrf
 php artisan migrate --seed
 ```
 
-##  RUN
+##  Run
+
+###  RUN VUE
 ```sh
 npm run dev
+```
+###  RUN Laravel
+```sh
+php artisan serve
 ```

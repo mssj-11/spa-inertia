@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Songs;
+use App\Models\Songs;//Import
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
