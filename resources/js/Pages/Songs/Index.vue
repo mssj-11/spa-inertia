@@ -1,5 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import ModalSong from '@/Components/ModalSong.vue';
 import Swal from 'sweetalert2';
 import { Head, useForm } from '@inertiajs/vue3';
 
@@ -27,6 +28,12 @@ const deleteSong = (id, name) => {
     })
 }
 
+const openModal = (song) => {
+    document.getElementById('id2').value = song.id;
+    document.getElementById('title2').value = song.title;
+    document.getElementById('autor2').value = song.autor;
+    document.getElementById('album2').value = song.album;
+}
 </script>
 
 <template>
@@ -66,7 +73,7 @@ const deleteSong = (id, name) => {
                                         <td>{{ song.autor }}</td>
                                         <td>{{ song.album }}</td>
                                         <td class="text-center" data-bs-toggle="modal" data-bs-target="#modalEdit">
-                                            <button class="btn btn-warning">
+                                            <button class="btn btn-warning" @click="openModal(song)">
                                                 <i class="fa-solid fa-edit"></i> Edit
                                             </button>
                                         </td>
@@ -82,6 +89,9 @@ const deleteSong = (id, name) => {
                     </div>
                 </div>
             </div>
+
+            <ModalSong :modal="'modalCreate'" :title="'Add Song'" :op="'1'"></ModalSong>
+            <ModalSong :modal="'modalEdit'" :title="'Edit Song'" :op="'2'"></ModalSong>
         </template>
     </AuthenticatedLayout>
 </template>

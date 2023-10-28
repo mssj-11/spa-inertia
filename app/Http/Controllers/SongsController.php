@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Songs;
 use App\Http\Requests\StoreSongsRequest;
-use App\Http\Requests\Request;//change to: Request
+use Illuminate\Http\Request;//change to: Request
 use Inertia\Inertia;//Import
 
 class SongsController extends Controller
@@ -62,7 +62,7 @@ class SongsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Songs $songs)
+    public function update(Request $request, $id)
     {
         //
         $song = Songs::find($id);//Search info. ID
